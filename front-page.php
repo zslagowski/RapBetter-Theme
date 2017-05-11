@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-test
+
 <section id="rb-front-header-image" class="">
     <?php $query = new WP_Query( array( 'pagename' => 'home' ) ); ?>
 
