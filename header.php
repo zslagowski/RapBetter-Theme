@@ -44,8 +44,9 @@
 		<div class="row">
       <div class="col-md-12">
 
-          <nav class="navbar" role="navigation">
-              <div class="container">
+					<div class="col-sm-2 text-center"><img class="rb-header-logo" src="<?php header_image(); ?>"/></div>
+
+          <div class="col-sm-10 text-center"><nav class="navbar text-center" role="navigation">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
                       <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -72,8 +73,7 @@
                       ?>
 
                   </div><!--end navbar-colapse-->
-              </div><!--end container-->
-          </nav>
+          </nav></div>
 
       </div><!--col-md-8-->
 

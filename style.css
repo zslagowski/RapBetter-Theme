@@ -502,21 +502,45 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
+.menu-primary {
+  float: right;
+	position: relative;
+	top:15px;
+}
+
+.nav li {
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+}
+
+.navbar-toggle {
+	border: 1px solid #000;
+}
+
+.icon-bar {
+	background-color: #000;
+}
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: inherit;
 }
 
 a:visited {
-	color: purple;
+	color: inherit;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: inherit;
 }
 
 a:focus {
@@ -892,4 +916,56 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	background: rgba(255,255,255,.5);
+	position: relative;
+	z-index: 2;
+}
+.rb-header-logo {
+	min-width: 200px;
+}
+
+#rb-front-header-image {
+	margin-top: -100px;
+}
+
+.rb-homepage-welcome-msg-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 550px;
+}
+
+.rb-homepage-welcome-msg {
+	color: #fff;
+	padding-top: 25%;
+}
+
+.rb-homepage-welcome-msg h2 {
+	font-size: 1.8em;
+}
+
+@media(max-width:768px) {
+	.menu-primary {
+	  float: none;
+	}
+
+	.rb-header-logo {
+		width: 150px;
+		margin-top: 20px;
+	}
+
+	#rb-front-header-image {
+		margin-top: 0px;
+	}
+
+	.rb-homepage-welcome-msg {
+		padding-top: 35%;
+	}
 }

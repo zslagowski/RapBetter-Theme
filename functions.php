@@ -111,7 +111,7 @@ function gemm_framework_scripts() {
 	wp_enqueue_style( 'RapBetter-Theme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'RapBetter-Theme-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.7', true );
-	
+
 	wp_enqueue_script( 'RapBetter-Theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'RapBetter-Theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
