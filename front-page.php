@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+test
 <section id="rb-front-header-image" class="">
     <?php $query = new WP_Query( array( 'pagename' => 'home' ) ); ?>
 
@@ -50,12 +50,12 @@
 
         <?php if ( $query->have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            
+
                 <div class="rb-front-posts row">
                     <div class="col-md-5"><?php the_post_thumbnail(); ?></div>
                     <div class="col-md-7"><?php the_excerpt(); ?></div>
                 </div>
-        
+
 
         <?php endwhile; else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
@@ -69,7 +69,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="rb-about-title"><?php the_title(); ?></div>                
+                <div class="rb-about-title"><?php the_title(); ?></div>
             </div>
             <div class="row">
                 <div class="rb-about-content"><?php the_content(); ?></div>
