@@ -931,7 +931,7 @@ object {
 }
 
 #rb-front-header-image {
-	margin-top: -100px;
+	margin-top: -120px;
 }
 
 .rb-homepage-welcome-msg-bg {
@@ -944,7 +944,7 @@ object {
 
 .rb-homepage-welcome-msg {
 	color: #fff;
-	padding-top: 25%;
+	padding-top: 250px;
 }
 
 .rb-homepage-welcome-msg h2 {
@@ -966,6 +966,6 @@ object {
 	}
 
 	.rb-homepage-welcome-msg {
-		padding-top: 35%;
+		padding-top: 150px;
 	}
 }
