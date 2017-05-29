@@ -12,7 +12,7 @@
               </div> <!--.rb-homepage-welcome-msg -->
       <?php endwhile; else : ?>
   	    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-      <?php endif; ?>
+      <?php endif; wp_reset_postdata(); ?>
   </section>
   <section id="rb-front-courses" class="">
       <div class="container">
@@ -23,11 +23,12 @@
 
           <div class="row">
               <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-                  <div class="col-md-6">
+                  <div class="col-md-6 rb-individual-course">
                       <a href="<?php the_field('link_to_course'); ?>">
                           <div class="rb-course-overlay">
                               <div class="rb-course-thumbnail"><?php the_post_thumbnail('large'); ?></div>
-                              <h3 class="rb-course-overlay-text"><?php the_title(); ?></h3>
+                              <h3 class="rb-course-overlay-text text-center"><?php the_title(); ?></h3>
+                              <span class="text-center"><?php the_content(); ?></span>
                           </div>
                       </a>
                   </div>
@@ -51,29 +52,32 @@
 
           <?php $query = new WP_Query( array( 'posts_per_page' => 3 ) ); ?>
 
-          <?php if ( $query->have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 
                   <div class="rb-front-posts row">
                       <div class="col-md-5"><?php the_post_thumbnail(); ?></div>
-                      <div class="col-md-7"><?php the_excerpt(); ?></div>
+                      <div class="col-md-7">
+                        <div class="rb-front-posts-title"><?php the_title(); ?></div>
+                        <div class="rb-front-posts-meta"><?php echo get_the_date(); ?> | <?php the_category( ' | '); ?></div>
+                        <div class="rb-front-posts-excerpt"><?php the_excerpt(); ?></div>
+                      </div>
                   </div>
 
 
           <?php endwhile; else : ?>
               <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
           <?php endif; ?>
+
+          <div class="rb-front-posts-read-more text-right"><a href="/blog">More Videos</a></div>
       </div> <!--container-->
   </section>
-  <section id="front-about" class="">
+  <section id="rb-front-about" class="">
       <?php $query = new WP_Query( array( 'pagename' => 'about' ) ); ?>
 
-      <?php if ( $query->have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
           <div class="container">
-              <div class="row">
-                  <div class="rb-about-title"><?php the_title(); ?></div>
-              </div>
               <div class="row">
                   <div class="rb-about-content"><?php the_content(); ?></div>
               </div>
