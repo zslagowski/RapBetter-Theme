@@ -45,7 +45,7 @@
 		<div class="row">
       <div class="col-md-12">
 
-					<div class="col-sm-2 text-center"><img class="rb-header-logo" src="<?php header_image(); ?>"/></div>
+					<div class="col-sm-2 text-center"><a href="/"><img class="rb-header-logo" src="<?php header_image(); ?>"/></a></div>
 
           <div class="col-sm-10 text-center"><nav class="navbar text-center" role="navigation">
                   <!-- Brand and toggle get grouped for better mobile display -->

@@ -1108,3 +1108,27 @@ object {
 .rb-about-content p {
 	font-size: 1.5em;
 }
+
+/*--------------------------------------------------------------
+# Blog Page
+--------------------------------------------------------------*/
+
+.blog-home-container {
+	background-color: #444;
+}
+
+.rb-blog-page-header {
+	font-size: 2.5em;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #fff;
+	border: 2.5px solid #fff;
+  width: 300px;
+  margin: 2em auto;
+}
+
+.rb-home-posts {
+	margin-bottom: 4em;
+	color: #fff;
+}

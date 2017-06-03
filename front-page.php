@@ -56,9 +56,9 @@
 
 
                   <div class="rb-front-posts row">
-                      <div class="col-md-5"><?php the_post_thumbnail(); ?></div>
+                      <div class="col-md-5"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
                       <div class="col-md-7">
-                        <div class="rb-front-posts-title"><?php the_title(); ?></div>
+                        <div class="rb-front-posts-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                         <div class="rb-front-posts-meta"><?php echo get_the_date(); ?> | <?php the_category( ' | '); ?></div>
                         <div class="rb-front-posts-excerpt"><?php the_excerpt(); ?></div>
                       </div>
