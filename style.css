@@ -1172,6 +1172,26 @@ object {
 }
 
 /*--------------------------------------------------------------
+# Single.php Page
+--------------------------------------------------------------*/
+
+.rb-course-overview-header {
+	margin: 2em 0;
+}
+
+.entry-meta {
+	font-size: 1.2em;
+	letter-spacing: .01em;
+	text-transform: uppercase;
+	margin: 1.5em 0;
+}
+
+.entry-content {
+	font-size: 1.5em;
+	margin: 2em 0;
+}
+
+/*--------------------------------------------------------------
 # Course Catalogue Pages
 --------------------------------------------------------------*/
 

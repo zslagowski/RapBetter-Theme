@@ -15,9 +15,13 @@
 			the_title( '<h1 class="entry-title rb-course-overview-header text-center">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		endif; ?>
 
-		if ( 'post' === get_post_type() ) : ?>
+		<div class="rb-single-featured-image text-center">
+			<?php the_post_thumbnail(); ?>
+		</div>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php gemm_framework_posted_on(); ?>
 		</div><!-- .entry-meta -->
