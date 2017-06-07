@@ -975,7 +975,7 @@ object {
 }
 
 .rb-homepage-welcome-msg h2 {
-	font-size: 2em;
+	font-size: 3em;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: .1em;
@@ -1177,6 +1177,7 @@ object {
 
 .rb-course-overview-header {
 	margin: 2em 0;
+	color: #fff;
 }
 
 .entry-meta {
@@ -1184,11 +1185,13 @@ object {
 	letter-spacing: .01em;
 	text-transform: uppercase;
 	margin: 1.5em 0;
+	color: #fff;
 }
 
 .entry-content {
 	font-size: 1.5em;
 	margin: 2em 0;
+	color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1211,4 +1214,75 @@ h3.llms-sd-section-title {
 
 .llms-my-courses ul.listing-courses li.course-item:first-child {
 		border-bottom: none;
+}
+
+footer.llms-sd-pagination.llms-my-courses-pagination {
+    color: #000;
+}
+
+footer.llms-form-fields {
+    background-color: #444;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+    background-color: #fff;
+}
+
+.rb-footer-icons .fa {
+    font-size: 2em;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    padding: .3em;
+    margin: .5em .1em;
+}
+
+.rb-footer-icons .fa-facebook {
+    padding: .3em .5em;
+}
+
+.rb-footer-icons .fa-instagram {
+    padding: .3em .35em;
+}
+
+.rb-footer-icons .fa-youtube-square {
+    padding: .3em .35em;
+}
+
+.rb-footer-icons .fa-youtube {
+    padding: .3em .35em;
+}
+
+.rb-footer-logo {
+    width: 45px;
+}
+
+.rb-copyright {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+}
+
+.rb-footer-logo {
+	width: 110px;
+}
+
+.entry-footer {
+	background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .qc-copyright {
+        font-size: 1.7em;
+        margin-bottom: 10px;
+    }
+
+    .site-footer{
+        position: relative;
+     }
 }
