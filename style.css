@@ -982,9 +982,23 @@ object {
 	line-height: 1.2em;
 }
 
+div#bs-example-navbar-collapse-1 {
+    padding-bottom: 2em;
+}
+
+@media (max-width: 1500px) {
+	.menu-primary {
+		top: 15px;
+	}
+}
+
 @media(max-width:768px) {
 	.menu-primary {
 	  float: none;
+	}
+
+	.rb-homepage-welcome-msg h2{
+		font-size: 2em;
 	}
 
 	.rb-header-logo {
@@ -1110,6 +1124,29 @@ object {
 	font-size: 1.5em;
 }
 
+@media (max-width: 992px) {
+	.rb-front-posts-read-more {
+		margin: 2em 70%;
+	}
+}
+
+@media (max-width: 768px) {
+	.rb-front-posts-read-more {
+		margin: 2em 0%;
+	}
+}
+
+@media (max-width: 480px) {
+	#rb-front-courses .rb-individual-course h3 {
+		font-size: 3em;
+		top: -200px;
+	}
+
+	#rb-front-courses .rb-individual-course span {
+	  font-size: 3em;
+		top: -200px;
+	}
+}
 /*--------------------------------------------------------------
 # Blog Page
 --------------------------------------------------------------*/
